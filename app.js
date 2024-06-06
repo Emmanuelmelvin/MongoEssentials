@@ -24,7 +24,7 @@ connectToDb((err)=>{
 })
 
 
-//routes
+//routes 
 app.get('/books', (req, res) =>{
         //init books arrayz
         //pagination technique
@@ -49,8 +49,7 @@ app.get('/books', (req, res) =>{
 })
 
 app.get('/books/:id', (req , res) => {
-
-
+    
     // if(ObjectId.isValid(req.params.id)){
 
         db.collection('books')
@@ -75,7 +74,7 @@ app.post('/books' , (req,res)=> {
             .insertOne(book)
             .then((result) =>{
                 res.status(200).json(result)
-                .catch((err) => {
+             .catch((err) => {
                     res.status(500).json({error: 'Cannot POST data'})
                 })
             })
