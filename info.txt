@@ -1,0 +1,9 @@
+MongoDB is a NOSQL database. SQL commands are not used to operate it.
+SQL database are stored in tables and tables can be related.
+NOSQL database uses collections and documents. They look like JSON files with key/value pairs.
+It has a high speed performance.  
+
+COLLECTIONS AND DOCUMENTS IN MONGODB.
+Documents are contents in a collection.
+Every documents have a unique id assigned by the MongoDB.
+Documents nesting is  also allowed. 
